@@ -1,4 +1,4 @@
-$siteAColor = #ffffff
+$siteAColor = #000
 $siteABgColor = #F03838
 $siteDescColor = #9e9e9e
 
@@ -6,29 +6,19 @@ header
   line-height 1.8rem
 
   .site-branding
-    text-align center
     margin-bottom 2rem
-    font-family "Open Sans", arial, sans-serif
-    letter-spacing 0.1em
-    text-transform uppercase
 
     .site-title
       margin 0
-      font-size 1.4rem
+      font-size 4.8rem
+      font-weight 700
+      letter-spacing -2px
 
       a
         display inline-block
         color $siteAColor
-        font-weight bolder
-        background-color $siteABgColor
         line-height 3rem
         height 3rem
-        padding 0 1rem
-        -webkit-transition padding 0.3s ease-out
-        transition padding 0.3s ease-out
-
-        &:hover
-          padding: 0 1.5rem
 
     .site-description
       color $siteDescColor
@@ -36,7 +26,6 @@ header
       margin 1rem 0 0
 
   .site-navigation
-    text-align center
 
     ul
       list-style none
@@ -46,11 +35,10 @@ header
 
       li
         display inline-block
-        margin 0 0.5rem
+        margin-right 1rem
 
         a
           display block
           color $siteABgColor
           font-size 1.6rem
           line-height 2rem
-          padding 0 1rem

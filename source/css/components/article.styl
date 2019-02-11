@@ -5,35 +5,31 @@ $articleTextColor = #424242
 
 article
   position relative
-  padding 8rem 0
+  padding 2rem 0
+  border-bottom 1px dashed #eee
 
   a
     color $hackerRed
-
-  &:not(:first-child):before
-    content ''
-    width 150px
-    height 1px
-    background-color: #e0e0e0
-    position absolute
-    top 0
-    left 50%
-    margin-left -75px
 
   blockquote
     margin 6rem 2rem
     padding-left 15px
     line-height 2rem
     border-left 4px solid $hackerRed
+  
+  .index-article-title
+    color $articleTitleColor
+    font-size: 2.4rem
+
+    a
+      color $articleTitleColor
 
   .article-title
-    position relative
     color $articleTitleColor
-    font-size 2.4rem
+    font-size 4.8rem
+    font-weight 900
     line-height 1.3
-    text-align center
     margin 0
-    padding 0 2rem
 
     a
       display block
@@ -52,14 +48,9 @@ article
           box-shadow inset 0 -2px 0 rgba(240, 56, 56, 0.4)
 
   .article-top-meta
-    position relative
     color $hackerGray
     font-size 1.3rem
-    text-align center
     margin 1rem 0
-
-    span
-      margin 0 0.5rem
 
     a
       color $hackerGray
