@@ -10,7 +10,7 @@
     </span>
     </div>
 
-    <h3 class="index-article-title"><a href="<%- config.root %><%- item.path %>" target="_blank"><span><%= item.title %></span></a></h3>
+    <h3 class="index-article-title"><a href="<%- config.root %><%- item.path %>"><span><%= item.title %></span></a></h3>
   
     <div class="article-footer">
       <div class="article-meta pull-left">
@@ -38,15 +38,10 @@
       %>
   
       <span class="post-tags">
-        <i class="icon-tags"></i>
           <%- tags.join('') %>
       </span>
       <% } %>
   
       </div>
     </div>
-  </article>
-  <% if (!index && (theme.disqus || theme.gitment || theme.valine)) { %>
-    <%- partial('comment') %>
-  <% } %>
-  
+  </article>  
